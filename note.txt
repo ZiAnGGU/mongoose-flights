@@ -1,0 +1,11 @@
+when a requrest comes in
+send request >>> routes request >>> perform logic
+ejs----> server -----> router ----> controller -----> send the response back to ejs
+
+
+when a requres comes in 
+
+ejs sends the request
+the requres ends up on the server 
+it gets routed appropriately
+a controller function is fired from the route the controller will use the model to perform CRUD

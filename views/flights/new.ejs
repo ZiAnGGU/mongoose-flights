@@ -1,0 +1,40 @@
+<!-- New function  -->
+<%- include('../partials/header.ejs') %>
+
+<h1>New Flight Page</h1>
+<form method="POST" action="/flights">
+    <label>Airline:</label>
+    <select name="airline">
+        <option value="American">American</option>
+        <option value="Southwest">Southwest</option>
+        <option value="United">United</option>
+    </select>
+    <button type="submit">SUBMIT</button>
+
+    <label>Airport:</label>
+    <select name="airport">
+        <option value="AUS">AUS</option>
+        <option value="DFW">DFW</option>
+        <option value="DEN">DEN</option>
+        <option value="LAX">LAX</option>
+        <option value="SAN">SAN</option>
+    </select>
+    <button type="submit">SUBMIT</button>
+
+    <label>Flight NO</label>
+    <select type="number" min="10" max="9999">
+        <option value="AUS">American</option>
+        <option value="DFW">Southwest</option>
+        <option value="DEN">United</option>
+        <option value="LAX">United</option>
+        <option value="SAN">United</option>
+    </select>
+   
+    <button type="submit">SUBMIT</button>
+
+    <label>Departs</label>
+        <input name="departs" type="date">
+    <button type="submit">SUBMIT</button>
+</form>
+
+<%- include('../partials/footer.ejs') %>
