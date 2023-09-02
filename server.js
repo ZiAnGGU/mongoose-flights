@@ -25,7 +25,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/flights', usersRouter); //used to be user we changed it to flights 
+app.use('/flights', usersRouter); 
+//used to be user we changed it to flights 
 // anything have /flights will go to this server 
 // and it is a preset, later on will use '/new'
 
